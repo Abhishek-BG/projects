@@ -20,7 +20,7 @@ run ```cd server``` from the project folder
 
 ### steps to run  Program-3 C-3
 
-  cd Program-1C-3
+  cd Program-3C-3
 
 1.   ####   Server
 run ```cd server``` from the project folder
