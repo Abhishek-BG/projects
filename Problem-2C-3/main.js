@@ -7,7 +7,7 @@ const { logger } = require('./utils/logger');
 const app = express();
 
 // Middleware
-app.use(express.json()); // Parse JSON payloads
+app.use(express.json()); // Parse JSON payloads body [without this we cannot parse the body]
 app.use(morgan('dev')); // Logging requests
 
 // Routes
