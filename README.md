@@ -33,3 +33,13 @@ run ```cd server``` from the project folder
 run ```cd Program-2C-3``` from the project folder
 -  ```npm install``` install the dependencies in the server
 -   ```node main.js``` start the server
+
+### steps to run  Program-1 C-4
+
+1.   ####   Step 1
+run ```cd Program-1C-4``` from the project folder
+-  ```npm install``` install the dependencies in the server
+-   ```node main.js``` start the server
+-  ```Send GET request to http://localhost:3000/api/ ```
+-  ```SEND POST request with body to  http://localhost:3000/api/```
+-  Content-Type :application/json in header & and send the body in raw json format 
