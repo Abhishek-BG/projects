@@ -27,6 +27,7 @@ router.post('/update/:id', async(req, res) => {
     const {select}= req.body;
     const boolValue = select==="False"?false:true
     await Item.findByIdAndUpdate(id,{status:boolValue});
+    Item.
     res.redirect('/');
 })
 //delete
