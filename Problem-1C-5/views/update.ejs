@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update</title>
+</head>
+<body>
+    <h1>Update <%= item.name %></h1>
+    <form action="/update/<%= item._id %>" method="POST">
+        <h3><%= item.name %></h3>
+        <select name="select">
+            <option>update the status</option>
+            <option value="True">Completed</option>
+            <option value="False">Not Completed</option>
+        </select>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>

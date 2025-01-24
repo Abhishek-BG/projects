@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To do List</title>
+  </head>
+  <body>
+    <h1>My To Do List</h1>
+    <a href="/create">Add new Task</a>
+    <ul>
+      <% items.forEach(item =>{ %>
+      <li>
+        <strong><%= item.name %></strong>
+        <p><% if(item.status===false) {%> <strike>Not Completed </strike> 
+            <%}else{%> Completed<%}%>
+        </p>
+        <form action="/delete/<%= item._id %>" method="POST">
+          <button type="submit">Delete</button>
+        </form>
+        <a href="/update/<%= item._id %>">Edit</a>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>

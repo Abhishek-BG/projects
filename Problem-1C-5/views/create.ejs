@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create</title>
+</head>
+<body>
+    <h1>Create To Do List</h1>
+    <form action="/create" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <select name="select">
+            <option>Select the status</option>
+            <option value="True">Completed</option>
+            <option value="False">Not Completed</option>
+        </select>
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>
